@@ -15,23 +15,23 @@ export default defineConfig({
         {
           path: '/',
           component: '@/pages/index',
-          routes: [
-            {
-              path: '/react16',
-              microApp: 'app1',
-              microAppProps: { autoSetLoading: false },
-            },
-            {
-              path: '/vue3',
-              microApp: 'app2',
-              microAppProps: { autoSetLoading: false },
-            },
-            {
-              path: '/angular9',
-              microApp: 'app3',
-              microAppProps: { autoSetLoading: false },
-            },
-          ],
+          // routes: [
+          //   {
+          //     path: '/react16',
+          //     microApp: 'app1',
+          //     microAppProps: { autoSetLoading: false },
+          //   },
+          //   {
+          //     path: '/vue3',
+          //     microApp: 'app2',
+          //     microAppProps: { autoSetLoading: false },
+          //   },
+          //   {
+          //     path: '/angular9',
+          //     microApp: 'app3',
+          //     microAppProps: { autoSetLoading: false },
+          //   },
+          // ],
         },
         // { path: '/react16', microApp: 'app1', },
         // { path: '/vue3', microApp: 'app2', },
@@ -83,24 +83,24 @@ export default defineConfig({
       // },
     });
   },
-  qiankun: {
-    master: {
-      // 注册子应用信息
-      apps: [
-        {
-          name: 'app1', // 唯一 id
-          entry: '//localhost:7100', // html entry
-        },
-        {
-          name: 'app2', // 唯一 id
-          entry: '//localhost:7105', // html entry
-        },
-        {
-          name: 'app3', // 唯一 id
-          entry: '//localhost:7103', // html entry
-        },
-      ],
-    },
-  },
+  // qiankun: {
+  //   master: {
+  //     // 注册子应用信息
+  //     apps: [
+  //       {
+  //         name: 'app1', // 唯一 id
+  //         entry: '//localhost:7100', // html entry
+  //       },
+  //       {
+  //         name: 'app2', // 唯一 id
+  //         entry: '//localhost:7105', // html entry
+  //       },
+  //       {
+  //         name: 'app3', // 唯一 id
+  //         entry: '//localhost:7103', // html entry
+  //       },
+  //     ],
+  //   },
+  // },
   headScripts: [`https://unpkg.com/zone.js`],
 });
